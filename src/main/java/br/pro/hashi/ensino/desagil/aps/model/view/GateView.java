@@ -37,7 +37,7 @@ public class GateView extends FixedPanel implements ItemListener, MouseListener 
             entradas[i] = new JCheckBox();
             entradas[i].setMnemonic(KeyEvent.VK_C);
             entradas[i].setSelected(false);
-            if (gate.getInputSize() > 1) {
+            if (gate.getInputSize() == 2) {
                 if (i == 0) {
                     add(entradas[i], 20, 87, 20, 25);
                 } else if (i == 1) {
@@ -45,6 +45,16 @@ public class GateView extends FixedPanel implements ItemListener, MouseListener 
                 }
             } else if (gate.getInputSize() == 1) {
                 add(entradas[i], 20, 107, 20, 25);
+
+            } else if (gate.getInputSize() == 3) {
+                if (i == 0) {
+                    add(entradas[i], 20, 82, 20, 25);
+                } else if (i == 1) {
+                    add(entradas[i], 20, 134, 20, 25);
+                }
+                else if (i == 2) {
+                    add(entradas[i], 20, 107, 20, 25);
+                }
             }
             i++;
         }
