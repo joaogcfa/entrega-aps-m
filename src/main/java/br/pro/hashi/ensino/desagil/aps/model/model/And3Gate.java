@@ -35,8 +35,7 @@ public class And3Gate extends Gate {
 
         } else if (inputIndex == 1) {
             nand1.connect(1, emitter);
-        }
-        else if (inputIndex == 2){
+        } else {
             nand3.connect(1, emitter);
         }
     }

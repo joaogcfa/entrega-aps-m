@@ -51,8 +51,7 @@ public class GateView extends FixedPanel implements ItemListener, MouseListener 
                     add(entradas[i], 20, 82, 20, 25);
                 } else if (i == 1) {
                     add(entradas[i], 20, 134, 20, 25);
-                }
-                else if (i == 2) {
+                } else if (i == 2) {
                     add(entradas[i], 20, 107, 20, 25);
                 }
             }
